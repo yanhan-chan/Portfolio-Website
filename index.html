@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yanhan's Portfolio</title>
+    <link rel="icon" href="/images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7896db9c3d.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <div id="header">
+      <div class="container">
+        <!-- navigation bar -->
+        <nav>
+          <img src="images/yanhan-logos_white.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#awards-extras">Extra Curriculars</a></li>
+            <li><a href="#projects">Technical Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fas fa-times" onclick="operateMenu(-200)"></i>
+          </ul>
+          <i class="fas fa-bars" onclick="operateMenu(0)"></i>
+        </nav>
+        <div class="header-text">
+          <p>Computer Science Student</p>
+          <h1>Hi, I'm <span>Yanhan</span><br />From Malaysia</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Currently a Year 2 Computer Science student pursuing my degree at
+              Monash University. I have an interest in both frontend & backend
+              development and is motivated to learn new skills to build my
+              career in the IT industry.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="openTab('education')">Education</p>
+              <p class="tab-links" onclick="openTab('experience')">
+                Experience
+              </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>Languages</span><br />Python | Java | SQL</li>
+                <li>
+                  <span>Frontend Development</span><br />HTML | CSS | JavaScript
+                </li>
+                <li><span>Databases</span><br />Oracle SQL | MongoDB</li>
+                <li>
+                  <span>Mobile Development</span><br />Android Studio - Java
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Feb 2022 - Present</span><br />Bachelor of Computer
+                  Science - Monash University
+                </li>
+                <li>
+                  <span>Jan 2021 - Nov 2021</span><br />AUSMAT - Methodist
+                  College Kuala Lumpur
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>Internship</span><br />Currently seeking for an
+                  internship
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <div id="awards-extras">
+      <div class="container">
+        <h1 class="sub-title">Awards & Extra Curricular Activities</h1>
+        <div class="awards-extras-list">
+          <div>
+            <i class="fas fa-code"></i>
+            <h2>Nott-A-Thon</h2>
+            <p>
+              4th Place in Competitive Programming Competition organized by
+              Nottingham University Malaysia Student Chapter
+            </p>
+            <a
+              href="https://www.hackerrank.com/nott-a-thon-lovelace130044"
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+
+          <div>
+            <i class="fas fa-crop-alt"></i>
+            <h2>Monash Coding League</h2>
+            <p>
+              Top 50 in Monash Coding League, Competitive Programming
+              Competition hosted by School of IT, Monash University Malaysia
+            </p>
+            <a
+              href="https://www.instagram.com/p/Cp1zPbOvE8z/?utm_source=ig_web_copy_link&igshid=MzRlODBiNWFlZA=="
+              target="_blank"
+              >Learn More</a
+            >
+          </div>
+
+          <div>
+            <i class="fab fa-app-store"></i>
+            <h2>VHack USM</h2>
+            <p>
+              Participated in a group of three in a hackathon hosted by
+              University Sains Malaysia
+            </p>
+            <a href="https://vhackusm.com/" target="_blank">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects Section -->
+    <div id="projects">
+      <div class="container" id="project-container">
+        <h1 class="sub-title">Technical Projects</h1>
+        <div class="project-list" id="haha">
+          <div class="work">
+            <img src="images/for-elden-ring.jpg" alt="" />
+            <div class="layer">
+              <h3>Console Game: Elden Ring</h3>
+              <p>
+                Console version of the actual game "Elden Ring" with Java,
+                focusing on building a maintainable and extensible system while
+                adhering to various design principles
+              </p>
+              <a
+                href="https://github.com/yanhan-chan/ConsoleEldenRing"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/cat.jpg" alt="" />
+            <div class="layer">
+              <h3>Cat GPT</h3>
+              <p>
+                Utilises a Trie data structure to create an autocomplete feature
+                for cats sentences
+              </p>
+              <a
+                href="https://github.com/yanhan-chan/CatGPT-Autocomplete"
+                target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/give-a-ride.jpg" alt="" />
+            <div class="layer">
+              <h3>Give a Ride?</h3>
+              <p>
+                Solved a real life scenario of the shortest path problem using a
+                modified version of the Dijkstra's algorithm
+              </p>
+              <a href="https://github.com/yanhan-chan/GiveARide" target="_blank"
+                ><i class="fa-solid fa-link"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="https://github.com/yanhan-chan" target="_blank" class="btn" id="see-more"
+          >See More</a
+        >
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>chanyanhan.cyh@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>+60125209926</p>
+            <div class="social-icons">
+              <a href="mailto: chanyanhan.cyh@gmail.com" target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+              ></a>
+              <a href="https://github.com/yanhan-chan" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/yanhan-chan/" target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/ChanYanHan-Resume.pdf" download class="btn btn2"
+              >Download Resume</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Yanhan</p>
+      </div>
+    </div>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbyh2RmgEdtB44aRswq2k3vqLql18Ep61futKHp9SesHufLHbp9e-1rjt-oLl6qiC6kdvw/exec";
+      const form = document.forms["submit-to-google-sheet"];
+      const msg = document.getElementById("msg");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            msg.innerHTML =
+              "Message Sent Successfully, Thank you for the feedback";
+            setTimeout(() => (msg.innerHTML = ""), 5000);
+            form.reset();
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
